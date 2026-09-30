@@ -1,0 +1,30 @@
+### Tüm görevleri getir
+GET http://localhost:8080/api/todos
+
+###
+
+### Yeni görev ekle
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+  "title": "Spring Boot öğreniyorum",
+  "completed": false
+}
+
+###
+
+### Görev güncelle
+PUT http://localhost:8080/api/todos/1
+Content-Type: application/json
+
+{
+  "title": "Spring Boot öğrendim",
+  "completed": true
+}
+
+###
+
+### Görev sil
+DELETE http://localhost:8080/api/todos/1
+GET http://localhost:8080/api/todos/1
